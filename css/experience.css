@@ -1,0 +1,186 @@
+
+/* intro sec container starts */
+.introsec{ 
+    background-image: url('/Photos/expbg.jpg');
+    background-attachment:scroll;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.introsec h1{ 
+    animation: float 4s infinite;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 8em;
+    font-family: "Fredoka One";
+    color: #5d5d79;
+
+}
+
+/*different float animation then the one in constant.css as this has a 'stationary' text shadow */
+@keyframes float{ 
+    0% {
+		text-shadow: 0 5px 10px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		text-shadow: 0 25px 10px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		text-shadow: 0 5px 10px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+/* intro sec container end */
+
+/*--- courses container start --*/
+.courses{ 
+    background-color: #fccfc8;
+    height: auto;
+}
+
+
+.courses h2{ 
+    margin-top: 40px;
+    font-size: 3em;
+    font-family: "Secular One";
+    color: #5d5d79;
+
+}
+
+/* card section start */
+.cardd{
+    margin: 60px auto 0 auto;
+    height: 300px;
+    width: 500px;
+    padding: 30px;
+    color: white; 
+    background-color:#5d5d79;
+}
+.cardd h3{ 
+    writing-mode: vertical-lr;
+        /* allows text to go up to down*/
+    text-orientation: upright; 
+    /* allows text to be oriented upright, or else it would be sideways */
+    letter-spacing:-10px;
+    margin-left: -8px;
+    font-size: 35px;
+    font-family: "Secular One"
+}
+.cardd h4{ 
+    margin-bottom: 20px;
+}
+.cardd p{ 
+    width: 300px;
+    text-align: justify;
+}
+/* card section end */
+
+/* positioning the buttons as they have to overlap the cards */
+.cardbuttons{ 
+    height: 300px;
+    width: 12px; /*small width to force the buttons to be aligned verticaly*/
+    padding-top: 70px;
+    padding-left: 225px;
+    position: absolute;
+    left: 50%;
+}
+
+.cardbuttons .btn {
+    background-color:white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: 10px 0;
+    color: #5d5d79;
+    font-family: "Barlow";
+
+
+}
+.cardbuttons > .btn:active,.cardbuttons > .btn:hover, .cardbuttons > .btn:focus{ 
+     border: 3px solid white;
+
+     background-color: #fccfc8;
+}
+/* card button styles end */
+/* first wave after cards */
+svg{ 
+    fill:#5d5d79;
+    
+}
+
+/* experience styles start */
+
+.experiences{ 
+    height: 100vh;
+    width: 100%;
+    background-color:#fccfc8;
+}
+.main{ 
+    background-color:#5d5d79;
+    height: auto;
+}
+.main img{
+    width: 100%;
+}
+.experiences p{ 
+    padding-top: 10px;
+    text-align: justify;
+    color: white;
+    font-size: 1.1rem;
+}
+/* experience styles end */
+.svg1{ 
+    display: block;
+    fill: #4d4d4d;
+}
+
+
+@media (max-width: 992px){ /*from big screens */
+    .introsec h1{ 
+        font-size: 5em;
+        margin-top:-70px;
+    }
+
+}
+@media (max-width: 768px){ /*from small screens */
+ 
+    .introsec h1{ 
+        font-size: 3.5em;
+    }
+    
+    .cardd{ 
+        width: 350px;
+        padding: 30px;
+        height: 340px;
+        margin-bottom: 100px;
+    }
+    /* allows the buttons to go back to static position so that justify-content-center can be used as it no longer needs to overlap */
+    .cardbuttons{ 
+        display:flex;
+        justify-content: center;
+        position: static;
+        height: 100px;
+        width: 600px;
+        margin: 0 auto;
+        margin-top: -80px;
+        padding:0;
+    
+    }
+  
+    .cardbuttons .btn:not(last-child){ 
+        margin-left: 10px;
+    }
+    
+    .cardd p{ 
+        width: 250px;
+    }
+
+    
+}

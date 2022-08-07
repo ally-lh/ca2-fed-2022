@@ -1,0 +1,343 @@
+html {
+    overflow-x: hidden;
+    /* this has to have overflow-x hidden or else on sm screens the scrolling of the slides are visible. */
+
+}
+
+body {
+    background-image: url('/Photos/bg1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* intro container (includes picture part and below purple section) start*/
+.introsec {
+    height: auto;
+}
+
+.introsec h1 {
+    animation: float 6s infinite;
+    font-family: "Fredoka One";
+    font-size: 50px;
+    color: #f7f8f3;
+    letter-spacing: 1px;
+    text-shadow: -3px -3px 0 #5d5d79,
+        3px -3px 0 #5d5d79,
+        -3px 3px 0 #5d5d79,
+        3px 3px 0 #5d5d79;
+    /* this forms a 'border' around the text*/
+
+}
+
+
+.introsec img {
+    width: 80%;
+    filter: drop-shadow(2px 2px 0 #77698c) drop-shadow(-2px 2px 0 #77698c) drop-shadow(2px -2px 0 #77698c) drop-shadow(-2px -2px 0 #77698c);
+    /* this forms a 'border' around the image as theimage i used is a png, hence drop shadow acts directly on the png, unlike border which would form a rectangle */
+}
+
+/* purple text section start */
+.introtext {
+    background-color: #77698c;
+    height: 200px;
+    color: white;
+    font-family: "Fredoka One";
+    align-content: center;
+}
+
+.introtext h2 {
+    margin: auto;
+    font-size: 30px;
+    font-weight: 5;
+    width: 60%;
+}
+
+/* --- purple text section end --*/
+/* ---intro container end ---*/
+
+/* -----The tabs section container start---- */
+.aboutmesec {
+    background-color: #77698c;
+}
+
+.aboutmesec ul {
+    justify-content: center;
+}
+
+.aboutmesec button {
+    background-color: #f7f8f3;
+}
+
+
+/* --overwriting bootstrap css for colour of buttons start (tabs)--*/
+
+.introtext .btn {
+    margin-top: 20px;
+    --bs-btn-border-color: #f7f8f3;
+    --bs-btn-color: #f7f8f3;
+    --bs-btn-border-width: 2px;
+}
+
+.introtext .btn:hover {
+    background-color: #f7f8f3;
+    --bs-btn-border-color: transparent;
+    color: #77698c;
+
+}
+
+.nav-tabs .nav-link {
+    font-family: 'Fredoka One';
+    color: #77698c;
+    background-color: #f7f8f3;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #f7f8f3;
+    border-top: 2px solid #77698c;
+    border-left: 2px solid #77698c;
+    border-right: 2px solid #77698c;
+}
+
+/* ----overwriting bootstrap css end (tabs)----- */
+
+.tab-content {
+    background-color: #f7f8f3;
+    height: auto;
+}
+
+/* uniform line for all 3 tabs */
+.linebreak1 {
+    width: 50%;
+    height: 3px;
+    background-color: #4d4d4d;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <----values section start -----> */
+
+.valuessec h1 {
+    font-family: 'Fredoka One';
+    font-size: 4rem;
+    color: #5d5d79;
+    letter-spacing: 1px;
+}
+
+.vsub {
+    font-family: 'Fredoka One';
+    font-size: 2rem;
+    color: #4d4d4d;
+    letter-spacing: 1px;
+}
+
+/* styling each card of values */
+.values {
+    width: 380px;
+    height: auto;
+    text-align: justify;
+    padding: 30px;
+}
+
+.values h2 {
+    color: #b77691;
+    text-align: center;
+    font-family: 'Fredoka One';
+    margin-bottom: 20px;
+}
+
+.linebreak2 {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 2px;
+    background-color: #5d5d79;
+}
+
+/* <----values section end -----> */
+
+
+/* <------personality section start --------> */
+
+
+.personalitysec h1 {
+    font-family: "Fredoka One";
+    color: #77698c;
+    font-size: 4rem;
+}
+
+.personalitysec h2 {
+
+    font-family: "Fredoka One";
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.pbox {
+    width: 380px;
+    height: auto;
+    padding: 30px;
+    text-align: justify;
+    margin: 10px 15px;
+    border-radius: 10%;
+}
+
+.personality1 {
+    background-color: #fccec6;
+    color: #5d5d79;
+}
+
+.personality2 {
+    background-color: #8989a4;
+    color: #f7f8f3;
+}
+
+.personality3 {
+    background-color: #ae8f9c;
+    color: #f7f8f3;
+}
+
+
+/* <------personality section end--------> */
+
+/* <----interest section start ---------> */
+.interestssec {
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.interestssec>h1 {
+    font-size: 70px;
+    color: #b77691;
+    font-family: 'Fredoka One';
+
+}
+
+.slides { /*container*/
+    /* makes it so that the actual slide container extends out of the page horizontally, allowing all items to be inline */
+    display: flex;
+    width: 400%;
+}
+
+/*styling of slides start*/ 
+.slide { 
+    width: 30%;
+    padding: 0px 50px 0px 50px;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.slide h1 {
+    font-family: "Fredoka One";
+    color: #5d5d79;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide p {
+    font-family: 'Barlow'
+}
+/*styling of slides end*/ 
+
+.s1 { /*styling the first slide for javascript*/
+    margin-left: 0;
+    transition: 1s;
+}
+
+.navigationbuttons {
+    width: 100%;
+    justify-content: center;
+    /*align to center of wrapper*/
+    display: flex;
+    margin-top: -50px;
+}
+
+.navigationbuttons .btn {
+    /*styling how the actual btns should look like */
+    border: 3px solid #5d5d79;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+
+}
+
+.navigationbuttons .btn:not(:last-child) {
+    /*styles all the buttons except the last one*/
+    margin-right: 40px;
+
+}
+
+.navigationbuttons .btn:hover {
+    background-color: #5d5d79;
+}
+
+
+
+@media (max-width:992px) { /*on md screens*/
+    .introsec h1 {
+        padding-top:10px;
+        font-size: 30px;
+        text-shadow: -2px -2px 0 #5d5d79,
+            2px -2px 0 #5d5d79,
+            -2px 2px 0 #5d5d79,
+            2px 2px 0 #5d5d79;
+    }
+
+    .introtext h2 {
+        font-size: 20px;
+        width: 90%;
+
+    }
+
+    .introtext {
+        padding-bottom: 10px;
+        height: 150px;
+    }
+
+}
+
+@media(max-width:768px) {/*on sm and smaller screens*/
+    .introsec h1 {
+        animation: none;
+        margin: 0 auto;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .introtext h2 {
+        font-size: 15px;
+        width: 90%;
+
+    }
+
+    .introtext {
+        padding-bottom: 10px;
+    }
+
+    .interestssec>h1 {
+        font-size: 50px;
+    }
+
+    .vsub {
+        font-size: 25px;
+    }
+
+    .personalitysec h1 {
+        font-size: 42px;
+    }
+
+    .personalitysec h2 {
+        font-size: 22px;
+
+    }
+
+}

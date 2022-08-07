@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fredoka+One&family=Gloria+Hallelujah&family=Kanit&family=Secular+One&display=swap');
+
+/* common css among all three pages */
+
+html {
+    background-color: rgba(234, 234, 234, 1);
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: auto;
+    scroll-behavior: smooth;
+    /*so that scroll is smooth transition*/
+
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    border-bottom: 2px solid #5d5d79;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.navbar-brand img {
+    /* animation: animation-name, animation-duration, animation-timing-function, animation-iteration-count, animation-fill-mode  */
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    /* animation-fill-mode: both allows the element with the animation to retain the styles from the keyframe both before and after the animation */
+}
+
+
+
+.navbar a {
+    font-family: 'Kanit';
+}
+
+/* ----footer styles----- */
+
+footer {
+    padding: 30px;
+    background-color: #4d4d4d;
+    color: #f7f8f3;
+    font-family: "Barlow";
+    letter-spacing: 0.5px;
+}
+
+footer img {
+    animation: squish 1s infinite;
+    width: 100px;
+    cursor: pointer;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #5d5d79;
+}
+
+footer img:active { /*activates on click*/
+    animation: bounce-away 1.5s 1;
+    transform-origin: bottom;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+footer span { 
+    opacity: 0.4;
+    margin-right: 10px;
+}
+
+.footerlogo {
+    margin-right: auto;
+}
+.footerline{ 
+    width: 24%; 
+    height: 2px; 
+    margin: 40px auto;
+    background-color:rgba(234, 234, 234, 1)
+}
+.icons {
+    margin-left: auto;
+}
+
+.reveal{ 
+    /* selects all the elements that needs the reveal animation and styles them */
+    position: relative;
+    transform: scale(0); 
+    /* so the element is invisible at first and small */
+    opacity: 0;
+    transition: 1s ease-in-out 
+    /* animation duration and fill */
+  }
+  .reveal.activereveal{
+    /* when .activereveal is added after the js, the element will scale into view */
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+/* ----footer styles----- */
+/* -----------animations used ---------- */
+
+
+/* how keyframes work is that of 0%, 50%, etc of the animation-duration, what style will apply on the element. */
+/* for animations that are gonna be working infinitely, make sure 0% and 100% have the same styles */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translate(0, -20px); 
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes heartbeat {
+    /* ease-in: animation starts slow and speeds up
+        ease-out: animation starts quick and slows down
+        ease-in-out: animation starts slow, speeds up, then slows down */
+    from {
+        transform: scale(1);
+        transform-origin: center center; /*so that it will scale from the center of the image, not from the bottom*/
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in; 
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes rotate { 
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(5deg);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+}
+
+@keyframes bounce-away {
+    0% {
+        transform: scale(1, 1) translateY(0); 
+    }
+
+    10% {
+        transform: scale(1.1, 0.9) translateY(0);
+    }
+
+    30% {
+        transform: scale(0.9, 1.1) translateY(-100px);
+
+    }
+
+    50% {
+        transform: scale(1.05, 0.95) translateY(0);
+    }
+
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+@keyframes squish {
+
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.1, 0.87) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}

@@ -1,0 +1,182 @@
+
+/* intro container start */
+.introsec {
+    height: auto;
+    background-image: url("/Photos/careerbg.jpg");
+    background-size: cover;
+    background-position: center center; 
+    /* centers the background instead of starting from the left */
+    padding-top: 50px;
+
+}
+
+
+.introsec img {
+    margin-left: 10%;
+    padding: 50px;
+    animation: rotate 6s infinite;
+    width: 100%;
+    filter: drop-shadow(-13px 10px 0px rgba(0, 0, 0, 0.35))
+}
+
+
+.introsec h1 {
+    margin: 10% auto 0 auto;
+    align-self: center; 
+    /* align my career options in the center of the block */
+    text-align: center;
+    font-family: "Fredoka One";
+    font-size: 5rem;
+    color: #5d5d79;
+    letter-spacing: 1px;
+
+}
+
+.introcontent {
+    /* makes a 'glassy' effect */
+    animation: float 7s infinite;
+    padding-top: 30px;
+    margin-bottom: -100px;
+    border-radius: 50px;
+    box-shadow: -1px 3px 8px 5px rgba(0, 0, 0, 0.24);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+/* ----intro container end ---- */
+
+/* career section start */
+
+.careers h2 {
+    font-family: "Fredoka One";
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.careers img {
+    width: 100%;
+    margin: auto 0;
+}
+
+/* career 1 start*/
+.career1 {
+    background-color: #fccfc8;
+    height: auto;
+}
+
+.career1 h2 {
+    color: #5d5d79;
+}
+/* career 1 end */
+
+/* career2 start */
+
+.career2 {
+    background-color: #f7f8f3;
+}
+
+.career2 h2,.career2 p {
+    text-align: right;
+    color: #4d4d4d;
+}
+
+/* career 2 end */
+
+/* career 3 start */
+.career3 {
+    background-color: #5d5d79;
+}
+
+.career3 h2,
+.career3 p {
+    color: #f7f8f3;
+}
+
+/* career3 end */
+/* career section end */
+
+/* work statistics table start */
+.workStats {
+    padding-bottom: 50px;
+    background-color: #f7f8f3;
+}
+
+.workStats h2 {
+    font-family: "Fredoka One";
+    color: #5d5d79;
+    font-size: 3.4rem;
+    padding: 40px;
+}
+
+/* work statistics table end */
+
+
+@media (max-width: 992px) { /*at md screens*/
+
+
+    .introcontent {
+        margin-bottom: 0px;
+        width: 90%;
+    }
+
+    .introsec img {
+        margin-left: 0;
+    }
+    .introsec h1{ 
+        font-size: 7vh;
+    }
+
+    .career1 img,
+    .career3 img {
+        padding: 50px 50px 0 50px;
+    }
+
+    .career2 img {
+        padding: 20px 30px 0 30px
+    }
+
+    .careers h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .careers p {
+        margin: 0 auto;
+        text-align: justify;
+        width: 600px;
+    }
+
+    .texts {
+        padding: 40px;
+        padding-top: 0;
+    }
+
+    .workStats h2 {
+        font-size: 3rem;
+        padding: 20px;
+
+    }
+
+
+}
+
+@media (max-width: 768px) { /*at sm and smaller screens*/
+
+    .introsec h1 {
+        margin: 0 auto 0px auto;
+        font-size: 5vh;
+
+    }
+
+    .workStats h2 {
+        font-size: 2rem;
+        padding: 20px;
+
+    }
+
+    .introsec img {
+        margin-left: 0;
+        padding: 40px;
+    }
+
+}

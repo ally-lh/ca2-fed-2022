@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CA2 FED Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="/css/constant.css" type="text/css" rel="stylesheet" />
+    <link href="/css/index.css" type="text/css" rel="stylesheet" />
+    <script src="/javascript/ca2common.js" defer></script>
+    <script src="/javascript/ca2index.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <!-- offcanvas navbar when screen width is md and below -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand offset-1" href="#">
+                    <img src="/Photos/logo.png" alt="LOGO" width="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-title" id="offcanvasNavbarLabel" src="/Photos/logo.png" alt="LOGO"
+                            width="40">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/html/Experience.html">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/html/Career.html">Career</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/html/Feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <section class="introsec"> <!--intro container-->
+        <!-- photo + intro text -->
+        <div class="container firstpart">
+            <div class="row">
+                <div
+                    class="col-md-3 col-lg-3 col-sm-4 col-sm-12 offset-md-2 offset-lg-2 justify-content-center d-flex flex-column">
+                    <h1>Welcome,<br>I'm Allison</h1>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 justify-content-center d-flex">
+                    <img src="/Photos/photoofme2.png" alt="photo of me">
+                </div>
+            </div>
+        </div>
+        <!-- description after intro -->
+        <div class="container-fluid d-flex introtext"> <!--the text after the beginning part-->
+            <div class="container text-center p-4">
+                <h2>Full-time sleep slave, part-time student. Someone who still can't believe she's not 16.</h2>
+                <a class="btn" href="#aboutmesec">View More</a>
+            </div>
+        </div>
+    </section>
+    <section class="aboutmesec" id="aboutmesec">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="values-tab" data-bs-toggle="tab" data-bs-target="#values-tab-pane"
+                    type="button" role="tab" aria-controls="values-tab-pane" aria-selected="true">Values</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="personality-tab" data-bs-toggle="tab"
+                    data-bs-target="#personality-tab-pane" type="button" role="tab" aria-controls="personality-tab-pane"
+                    aria-selected="false">Personality</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="interests-tab" data-bs-toggle="tab" data-bs-target="#interests-tab-pane"
+                    type="button" role="tab" aria-controls="interests-tab-pane" aria-selected="false">Interests</button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="values-tab-pane" role="tabpanel" aria-labelledby="values-tab"
+                tabindex="0">
+                <section class="container valuessec p-5 ">
+                    <div class="row flex-column text-center pb-5">
+                        <h1>Values</h1>
+                        <h2 class="vsub">What I believe in</h2>
+                        <div class="linebreak1"></div>
+                    </div>
+                    <div class="row flex-column flex-lg-row d-flex align-content-center justify-content-center">
+                        <div class="values v1 col-12 col-md-5 col-lg-3">
+                            <header>
+                                <h2>Freedom</h2>
+                            </header>
+                            <div class="linebreak2"></div>
+                            <p> I place great importance on being allowed to have my personal thoughts and take on
+                                things, as well as freedom of speech. I hate being constrained by certain rules that
+                                stops me from being who I am or causes me to go against my beliefs. </p>
+
+                        </div>
+                        <div class="values v2 col-12 col-md-5 col-lg-3">
+                            <header>
+                                <h2>Self-Respect</h2>
+                            </header>
+                            <div class="linebreak2"></div>
+                            <p>I understand my own self-worth and will never purposely put myself down infront of others
+                                or conform to peer pressure. I believe only having self-respect can you treat others
+                                with dignity and respect. </p>
+                        </div>
+                        <div class="values v3 col-12 col-md-5 col-lg-3">
+                            <header>
+                                <h2>Happiness</h2>
+                            </header>
+                            <div class="linebreak2"></div>
+                            <p>I believe that what is most important is to live in the present, rather than worry for
+                                the future. I won't fret over what may happen in the future and just ensure that in the
+                                present, I am content with what I have. After all, you can't turn back time. </p>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="personality-tab-pane" role="tabpanel" aria-labelledby="personality-tab"
+                tabindex="0">
+                <section class="container personalitysec p-5">
+                    <div class="row flex-column text-center pb-5">
+                        <h1>Personality:</h1>
+                        <h2>The Debater: ENTP-T</h2>
+                        <div class="linebreak1"></div>
+                    </div>
+                    <div class="row flex-column flex-lg-row d-flex align-content-center justify-content-center">
+                        <div class="pbox personality1 col-12 col-md-5 col-lg-4">
+                            <h2> Charismatic & Energetic </h2>
+                            <p>People with the Debater personality type have a way with words and wit that others find
+                                intriguing. Their confidence, quick thought and ability to connect disparate ideas in
+                                novel ways create a style of communication that is charming, even entertaining, and
+                                informative at the same time. When given a chance to combine these traits to examine an
+                                interesting problem, Debaters can be truly impressive in their enthusiasm and energy,
+                                having no qualms with putting in long days and nights to find a solution.</p>
+                        </div>
+                        <div class="pbox personality2 col-12 col-md-5 col-lg-4">
+                            <h2> Knowledgable & Quick Thinker </h2>
+                            <p>Debaters rarely pass up a good opportunity to learn something new, especially abstract
+                                concepts. This information isn’t usually absorbed for any planned purpose as with
+                                dedicated studying, people with the Debater personality type just find it fascinating.
+                                Debaters have tremendously flexible minds, and are able to shift from idea to idea
+                                without effort, drawing on their accumulated knowledge to prove their points, or their
+                                opponents’, as they see fit.</p>
+                        </div>
+                        <div class="pbox personality3 col-12 col-md-5 col-lg-4">
+                            <h2> Hard to focus </h2>
+                            <p> The same flex ibility that allows Debaters to come up with such original plans and ideas
+                                makes them readapt perfectly good ones far too often, or to even drop them entirely as
+                                the initial excitement wanes and newer thoughts come along. Boredom comes too easily for
+                                Debaters, and fresh thoughts are the solution, though not always a helpful one.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="interests-tab-pane" role="tabpanel" aria-labelledby="interests-tab"
+                tabindex="0">
+                <section class="container interestssec">
+
+                    <h1 class="text-center pb-4">My Interests</h1>
+
+                    <div class="slides">
+                        <!--slides container-->
+
+                        <div class="row">
+                            <!-- slides start -->
+                            <div class="slide s1" id="s1">
+                                <div class="row flex-row ">
+                                    <div class="col-md-5 col-lg-5 col-10">
+                                        <img src="/Photos/reading.png" alt="my favourite books">
+                                    </div>
+                                    <div
+                                        class="col-md-5 col-lg-5 pt-5 d-flex justify-content-center col-10 flex-column">
+                                        <header>
+                                            <h1> Reading </h1>
+                                        </header>
+                                        <!-- collage made by me, Front Covers of: "Throne of Glass by Sarah J. Maas,  Bloomsbury USA Children's, August 7 2012" ," A Court of Thorns and Roses by Sarah J. Mass, Bloomsbury USA Childrens, May 5 2015","Heaven's Official Blessing 1 by Mo Xiang Tong,Seven Seas Entertainment Llc (US), December 2012"  -->
+
+                                        <p> I love reading, and it's my favourite past time to do since kindergarten. To
+                                            cast away the real world and escape into a world of fantasy, be it full of
+                                            demons and blood or magic and swords, it is a great way to escape from
+                                            reality. I personally love reading as I am able to turn the events in the
+                                            book into a little movie running in my head, which entertains me to no
+                                            end.<br><br> The covers on the left are some examples of my favourite books.
+                                            From left to right, it is the 'Throne of Glass' series and the 'Court of
+                                            Thorns and Roses', both by Sarah J. Maas, and a original chinese novel
+                                            'Heaven's Official Blessing' by Mo Xiang Tong Xiu. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide s2">
+                                <div class="row flex-row">
+                                    <div class="col-md-5 col-lg-5 col-10">
+                                        <!-- designs/images from my own collection -->
+                                        <img src="/Photos/graphicdesign.png" alt="My Graphic Design examples">
+                                    </div>
+                                    <div
+                                        class="col-md-5 col-lg-5 pt-5 d-flex justify-content-center col-10 flex-column">
+                                        <header>
+                                            <h1> Graphic design </h1>
+                                        </header>
+
+                                        <p>Ever since I started to like K-pop, I fell in love with going into fan-cafes
+                                            where fans made merchandise to distribute to the fans of the same group. I
+                                            loved the graphic designs that they did, and that was when I began on my
+                                            graphic design journey. Currently, I do graphic design on my free time, both
+                                            for a society I am in and also for kpop fanclubs in Singapore. <br><br>On
+                                            the left are some examples of my previous designs for fancafe events.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide s3">
+                                <div class="row flex-row">
+                                    <div class="col-md-5 col-lg-5 col-10">
+                                        <!-- designs/images from my own collection -->
+                                        <img src="/Photos/gaming.png" alt="valclips">
+                                    </div>
+                                    <div
+                                        class="col-md-5 col-lg-5 pt-5 d-flex justify-content-center col-10 flex-column">
+                                        <header>
+                                            <h1>Gaming</h1>
+                                        </header>
+
+                                        <p>Gaming has been a big part of my life, starting since the tender age of 5.
+                                            From having near 1000 hours on Team Fortress 2, to Minecraft, Overwatch and
+                                            now to Valorant, gaming has always been a favourite hobby of mine outside of
+                                            school. I made plenty of friends through gaming, where even some of the
+                                            friendships made online lasted longer than some of my real life friendships
+                                            (which is quite sad, I know). </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slides end -->
+
+                    </div>
+                    <!-- navigation start -->
+                    <div class="navigationbuttons">
+                        <!--customise the radio buttons-->
+                        <button class="btn" id="btn1" type="button"></button>
+                        <button class="btn" id="btn2" type="button"></button>
+                        <button class="btn" id="btn3" type="button"></button>
+                        <!-- navigation end -->
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+    <div class="d-flex">
+        <div class="footerlogo d-none d-md-block">
+             <!-- logo disappears on small screens -->
+            <img src="/Photos/logo.png" alt="logo">
+        </div>
+        <div class="footerline d-none d-md-block "></div>
+        <div class="copyright pt-4">
+            <span>&copy;2022</span>Allison   
+        </div>
+        <div class="footerline d-none d-md-block"></div>
+        <div class="icons">
+            <div class="row d-flex text-center pt-4">
+                <div class="col icon">
+                    <a href="https://instagram.com/alli_allyz?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/ally-lh"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col icon">
+                    <a href="https://discordapp.com/users/260996411124875268"><i class="bi bi-discord"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

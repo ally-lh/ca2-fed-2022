@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CA2 FED Website(feedback) </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link href="/css/constant.css" type="text/css" rel="stylesheet" />
+  <link href="/css/feedback.css" type="text/css" rel="stylesheet" />
+  <script src="/javascript/ca2common.js" defer></script>
+  <script src="/javascript/ca2feedback.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand offset-1" href="/html/index.html">
+          <img src="/Photos/logo.png" alt="LOGO" width="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img class="offcanvas-title" id="offcanvasNavbarLabel" src="/Photos/logo.png" alt="LOGO" width="40">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/html/Experience.html">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="/html/Career.html">Career</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- intro section start -->
+  <section class="intro">
+    <div class="container pb-5 d-flex flex-column content">
+      <div class="row flex-column-reverse flex-md-row"> <!--inline on md and above, collapsed on sm -->
+        <div class="col-md-6 texts align-self-end pb-md-5">
+          <h1>Any<br>Feedback?</h1>
+          <p>If there were any issues with the site, do let me know!</p>
+        </div>
+        <div class="col-md-6 p-3 ">
+          <!-- https://storyset.com/illustration/cat-astronaut/amico -->
+          <img src="/Photos/feedbackcat.png" alt="space cat">
+        </div>
+      </div>
+      <a class="btn" href="#form">Let me know what you think!</a>
+    </div>
+
+  </section>
+  <!-- intro section end -->
+  <!-- form section start -->
+  <section class="formwrap p-md-5 mb-5" id="form">
+    <header>
+      <h2 class="text-center">Your Opinion:</h2>
+    </header>
+    <!-- need to add novalidate for custom validation on bootstrap5 forms -->
+    <form class="requires-validation" novalidate>
+      <div class="row g-2 mb-3 pt-5">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="firstNameInput" placeholder="name@example.com" value=""
+              required>
+            <label for="firstNameInput">First Name</label>
+            <div class="invalid-feedback"> <!--bootstrap special feedback when input is invalid-->
+              Please input your first name
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="lastNameInput" placeholder="name@example.com" value="" required>
+            <label for="lastNameInput">Last Name</label>
+            <div class="invalid-feedback">
+              Please input your last name.
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+        <label for="emailInput">Email address</label>
+        <div class="invalid-feedback">
+          Please input your email.
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="genderInput">Gender</label>
+            <select class="form-select" id="genderInput" required>
+              <option value="" selected disabled>Select...</option>
+              <option value="1">Female</option>
+              <option value="2">Male</option>
+              <option value="3">Rather Not Say</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select an input.
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <select class="form-select" aria-label="whoSelect" required>
+            <option value="" selected disabled>Occupation</option>
+            <option value="1">I'm a teacher</option>
+            <option value="2">I'm a friend</option>
+            <option value="3">I'm a stranger</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select an input.
+          </div>
+        </div>
+      </div>
+      <label for="likeRange" class="form-label">How did you like my site?</label>
+      <input type="range" class="form-range" min="0" max="5" step="0.5" id="likeRange">
+      <div class="row d-flex justify-content-between mb-5">
+        <div class="col">I don't like it at all</div>
+        <div class="col text-end">I like it alot</div>
+      </div>
+      <div class="text-center mb-4">
+        <p class="text-center">Are you from SP?</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="fromSPOpt" id="yesOpt" value="yes" required>
+          <label class="form-check-label" for="yesOpt">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="fromSPOpt" id="noOpt" value="no" required>
+          <label class="form-check-label" for="noOpt">No</label>
+
+        </div>
+
+      </div>
+      <div class="form-floating mb-5">
+        <textarea class="form-control" placeholder="Input your message here..." id="comment" style="height: 200px"
+          required></textarea>
+        <label for="comment">Input your message here...</label>
+        <div class="invalid-feedback">
+          Please enter your message.
+        </div>
+      </div>
+      <div class="text-center mb-5">
+        <button type="submit" id="subbutton" class="btn subbutton">Submit</button>
+      </div>
+
+    </form>
+
+  </section>
+  <footer>
+    <div class="d-flex">
+        <div class="footerlogo d-none d-md-block">
+             <!-- logo disappears on small screens -->
+            <img src="/Photos/logo.png" alt="logo">
+        </div>
+        <div class="footerline d-none d-md-block "></div>
+        <div class="copyright pt-4">
+            <span>&copy;2022</span>Allison   
+        </div>
+        <div class="footerline d-none d-md-block"></div>
+        <div class="icons">
+            <div class="row d-flex text-center pt-4">
+                <div class="col icon">
+                    <a href="https://instagram.com/alli_allyz?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/ally-lh"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col icon">
+                    <a href="https://discordapp.com/users/260996411124875268"><i class="bi bi-discord"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

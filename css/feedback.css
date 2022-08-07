@@ -1,0 +1,127 @@
+body {
+    background-image: url(/Photos/feedbackbg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* intro container start */
+.intro {
+    padding: 50px;
+}
+
+.content {
+
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+        /* this allows a 'glassy' effect to happen */
+    padding: 80px;
+    width: 80vw;
+    margin: 0 auto;
+    box-shadow: -1px 3px 8px 5px rgba(0, 0, 0, 0.34);
+    border-radius: 50px;
+    animation: float 6s infinite;
+
+}
+.intro img {
+    width: 100%;
+    animation: rotate 6s infinite;
+    cursor: pointer;
+}
+
+.intro img:active{ 
+    animation: squish 1s;
+
+}
+
+.texts {
+    padding-top: 70px;
+    color: #5d5d79;
+
+}
+
+.texts h1 {
+    font-family: "Fredoka One";
+    font-size: 4.2rem;
+}
+
+.texts p {
+    font-size: 1.3rem;
+}
+
+.content .btn {
+    display: block;
+    --bs-btn-border-color: #5d5d79;/*overriding bootstrao css*/
+    --bs-btn-color: #5d5d79;
+    --bs-btn-border-width: 2px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.content .btn:hover {
+    background-color: #5d5d79;
+    --bs-btn-border-color: transparent;
+    color: #f7f8f3;
+
+}
+
+
+.formwrap { /*form container*/
+    width: 80%;
+    margin: 50px auto 0 auto;
+    background-color: #f7f8f3;
+    box-shadow: -1px 3px 8px 5px rgba(0, 0, 0, 0.24);
+    border-radius: 40px;
+    height: auto;
+}
+
+.formwrap h2 {
+    font-family: "Fredoka One";
+    color: #5d5d79
+}
+
+.subbutton {
+    background-color: #5d5d79;
+    color: #f7f8f3;
+    font-family: "Fredoka One";
+    padding: 10px 20px 10px 20px;
+}
+
+/* on md screens */
+@media (max-width: 992px) { 
+    .intro {
+        padding: 50px 0 0 0;
+    }
+
+    .texts h1 {
+        font-family: "Fredoka One";
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .texts p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        padding: 40px;
+
+        margin: 0 auto;
+
+    }
+    .content .btn{ 
+        display: none;
+    }
+}
+/* on sm screens */
+@media (max-width: 768px) {
+    .formwrap{ 
+        padding: 20px;
+        padding-top: 50px;
+    }
+}

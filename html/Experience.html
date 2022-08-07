@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CA2 FED Website(exp) </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link href="/css/constant.css" type="text/css" rel="stylesheet" />
+  <link href="/css/experience.css" type="text/css" rel="stylesheet" />
+  <script src="/javascript/ca2exp.js" defer></script>
+  <script src="/javascript/ca2common.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand offset-1" href="/html/index.html">
+          <img src="/Photos/logo.png" alt="LOGO" width="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img class="offcanvas-title" id="offcanvasNavbarLabel" src="/Photos/logo.png" alt="LOGO" width="40">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link" href="/html/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="/html/Career.html">Career</a></li>
+              <li class="nav-item"><a class="nav-link" href="/html/Feedback.html">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- intro container start -->
+  <div class="introsec">
+    <div class="container d-flex flex-column align-items-center">
+      <h1 class="text-center">My<br>Experiences</h1>
+    </div>
+  </div>
+  <!-- intro container end -->
+  <!-- courses container start -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center">COURSES OFFERED IN SP</h2>
+      </div>
+      <div class="row">
+        <!-- cards container start -->
+        <div class="cardsContainer">
+          <!-- only one card as texts would be replaced in js -->
+          <div class="cardd d-flex">
+            <div class="col-2">
+              <h3 id="courseShort">DCITP</h3>
+            </div>
+            <div class="col">
+              <h4 id="courseName">Common ICT Programme</h4>
+              <p id="courseText">The DCITP is a semester long programme designed to give you a broad introduction to the
+                Infocomm landscape and help you gain insights into the occupations and job roles, career pathways and
+                employment opportunities in the various Infocomm sectors.</p>
+            </div>
+          </div>
+        </div>
+        <!-- cards container end -->
+        <!-- navigation button start -->
+        <div class="cardbuttons">
+          <!-- on click, the buttons run the specific function -->
+          <button class="btn" id="btn1" type="button" onclick="appear(1)">1</button>
+          <button class="btn" id="btn2" type="button" onclick="appear(2)">2</button>
+          <button class="btn" id="btn3" type="button" onclick="appear(3)">3</button>
+          <button class="btn" id="btn4" type="button" onclick="appear(4)">4</button>
+        </div>
+        <!-- navigation buttons end -->
+      </div>
+
+    </div>
+    <!-- courses container end -->
+    <!-- svg is in the courses wrapper so that it's background wont be white -->
+    <svg viewBox="0 0 1440 319">
+      <path class="svg2"
+        d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- experience start -->
+  <section class="experiences">
+    <div class="main">
+      <div class="container justify-content-center p-5 flex-column flex-md-row flex-lg-row">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-5">
+            <img src="/Photos/classphoto.jpg" alt="classphoto">
+          </div>
+          <div class="col-12 col-md-12 col-lg-7 p-2">
+            <p>I didn't expect to like the class I am in right off the bat in poly. Even though there is a clear gender
+              inequality, the whole class still bonds perfectly fine, eating lunch together as a whole class at FC4,
+              studying together after class and doing dumb antics during our breaks. We hang out together outside of
+              school as well, where this photo was taken on our lunch trips to Ikea. </p>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-lg-row">
+          <div class="col-12 col-md-12 col-lg-7 p-2">
+            <p>During Freshman Orientation Camp, I was able to meet so many new people before school even started. I met
+              people who were from different courses, as well as seniors who were really friendly in teaching us about
+              SP. In the Freshman Group, there was a girl there where I hit it off with her instantly, and till now, we
+              are really great friends, from CCA mates to study buddies. During inter-group sessions, I made new friends
+              with others as well, and we've been good friends ever since! <br>(photo on the left featuring Ethan, Dario
+              and Kate from DAAA.)</p>
+          </div>
+          <div class="col-12 col-md-12 col-lg-5">
+            <img src="/Photos/daaafrens.jpg" alt="classphoto">
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-5">
+            <img src="/Photos/csgirls.jpg" alt="classphoto">
+          </div>
+          <div class="col-12 col-md-122 col-lg-7 p-2">
+            <p>Here are the girls in the class. With just four of us, it allowed us to bond even closer. Somehow, all of
+              us could click together instantly without those personality clashes you get when u meet and make new
+              friends. School has been really fun because of them, and I hope we would still be able to gather again
+              when this semester ends.
+            </p>
+          </div>
+        </div>
+      </div>
+<!-- experiences end -->
+      <svg class="svg1" viewBox="0 0 1440 319">
+        <path
+          d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+
+    </div>
+
+
+    <footer>
+      <div class="d-flex">
+          <div class="footerlogo d-none d-md-block">
+               <!-- logo disappears on small screens -->
+              <img src="/Photos/logo.png" alt="logo">
+          </div>
+          <div class="footerline d-none d-md-block "></div>
+          <div class="copyright pt-4">
+              <span>&copy;2022</span>Allison   
+          </div>
+          <div class="footerline d-none d-md-block"></div>
+          <div class="icons">
+              <div class="row d-flex text-center pt-4">
+                  <div class="col icon">
+                      <a href="https://instagram.com/alli_allyz?igshid=YmMyMTA2M2Y="><i class="bi bi-instagram"></i></a>
+                  </div>
+                  <div class="col">
+                      <a href="https://github.com/ally-lh"><i class="bi bi-github"></i></a>
+                  </div>
+                  <div class="col icon">
+                      <a href="https://discordapp.com/users/260996411124875268"><i class="bi bi-discord"></i></a>
+                  </div>
+              </div>
+  
+          </div>
+  
+      </div>
+  </footer>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
